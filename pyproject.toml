@@ -1,6 +1,6 @@
 [project]
-name = "crawler_byte"
-version = "0.0.1"
+name = "crawlerbyte"
+version = "0.0.3"
 authors = [
   { name="Sixtus Onumajuru", email="jigga.e10@gmail.com" },
 ]
