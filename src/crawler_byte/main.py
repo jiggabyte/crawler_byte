@@ -6,10 +6,8 @@ base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
 
 
 def main():
-    result = crawl(base_dir, max_depth=1000, action=lambda f: print(f))
-    print("Crawled files:", result)
-
-
+    result = crawl(base_dir, max_depth=1000, action=lambda f: f)
+    print("Crawled Data:", result)
 
 
 
