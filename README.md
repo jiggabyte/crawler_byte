@@ -8,7 +8,7 @@ It’s perfect for building file search tools, batch processors, or custom direc
 ## 📦 Installation
 
 ```bash
-$ pip install crawler_byte
+$ pip install crawler-byte
 ```
 
 
