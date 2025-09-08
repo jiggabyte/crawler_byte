@@ -1,4 +1,4 @@
-# 🚀 Crawler Byte
+# 🚀 CrawlerByte
 
 **Crawler Byte** is a Python package for recursively crawling directories, collecting file stats, and executing custom actions on each file.  
 It’s perfect for building file search tools, batch processors, or custom directory explorers.
@@ -8,7 +8,7 @@ It’s perfect for building file search tools, batch processors, or custom direc
 ## 📦 Installation
 
 ```bash
-$ pip install crawler-byte
+$ pip install crawlerbyte
 ```
 
 
@@ -19,7 +19,7 @@ crawl() takes three arguments
 => path (str), max_depth (int), function (callable)
 
 ``` python
-from crawler_byte.crawler import crawl
+from crawlerbyte.crawler import crawl
 import os
 
 # Set your target directory
