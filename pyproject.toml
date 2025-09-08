@@ -6,7 +6,7 @@ authors = [
 ]
 description = "A python package that crawls a directory recursively and returns the file names and file stats as well as execute a custom function passed as an argument."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
