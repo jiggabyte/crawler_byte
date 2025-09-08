@@ -1,6 +1,6 @@
-# 🚀 CrawlerByte
+# 🚀 CrawlerUgo
 
-**Crawler Byte** is a Python package for recursively crawling directories, collecting file stats, and executing custom actions on each file.  
+**Crawler Ugo** is a Python package for recursively crawling directories, collecting file stats, and executing custom actions on each file.  
 It’s perfect for building file search tools, batch processors, or custom directory explorers.
 
 ---
@@ -8,7 +8,7 @@ It’s perfect for building file search tools, batch processors, or custom direc
 ## 📦 Installation
 
 ```bash
-$ pip install crawlerbyte
+$ pip install crawlerugo
 ```
 
 
@@ -19,7 +19,7 @@ crawl() takes three arguments
 => path (str), max_depth (int), function (callable)
 
 ``` python
-from crawlerbyte.crawler import crawl
+from crawlerugo.crawler import crawl
 import os
 
 # Set your target directory
