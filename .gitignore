@@ -33,6 +33,4 @@ instance/
 noxfile_config.py
 src/data/
 src/main.py
-tests/test_crawler.py
-
-
+tests/*
