@@ -1,7 +1,35 @@
-# Example Package
+# 🚀 Crawler Byte
 
-This is a simple example package. You can use
-[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
-to write your content.
+**Crawler Byte** is a Python package for recursively crawling directories, collecting file stats, and executing custom actions on each file.  
+It’s perfect for building file search tools, batch processors, or custom directory explorers.
 
-# crawler_byte
+---
+
+## 📦 Installation
+
+```bash
+$ pip install crawler_byte
+```
+
+
+
+
+## Usage
+crawl() takes three arguments
+=> path (str), max_depth (int), function (callable)
+
+``` python
+from crawler_byte.crawler import crawl
+import os
+
+# Set your target directory
+base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
+
+def main():
+    # Crawl the directory and run a custom action on each file
+    result = crawl(base_dir, max_depth=1000, action=lambda f: f)
+    print("Crawled Data:", result)
+
+if __name__ == "__main__":
+    main()
+```
