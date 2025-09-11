@@ -3,11 +3,11 @@ from pathlib import Path
 import os
 from typing import Any
 
+
 def crawl(directory: str, action: Callable[[str], Any], max_depth: int|None = None) -> list[dict]:
     # validate arguments
     if not isinstance(directory, str) or not callable(action) or (max_depth is not None and not isinstance(max_depth, int)):
         raise Exception(f"Ensure the parameters passed are valid: {directory} must be string, {action} must be a function callable, and {max_depth} an int or None")
-
 
     # check if directory exists / is a directory
     if not os.path.exists(directory):
@@ -59,4 +59,5 @@ def crawl(directory: str, action: Callable[[str], Any], max_depth: int|None = No
                     file_path = dir_path / filename
                     ret_obj = action(str(file_path))
                     add_result(file_path, ret_obj)
+
     return results
