@@ -16,7 +16,7 @@ $ pip install crawlerugo
 
 ## Usage
 crawl() takes three arguments
-=> path (str), max_depth (int), function (callable)
+=> path (str), function (callable), max_depth (int|None) = None
 
 ``` python
 from crawlerugo.crawler import crawl
@@ -27,7 +27,7 @@ base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
 
 def main():
     # Crawl the directory and run a custom action on each file
-    result = crawl(base_dir, max_depth=1000, action=lambda f: f)
+    result = crawl(base_dir, lambda f: f, 1000)  # max_depth is optional but if present indicates the debth count to crawl
     print("Crawled Data:", result)
 
 if __name__ == "__main__":
